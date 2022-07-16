@@ -2,16 +2,15 @@
 
 ✅ Alpine JS plugin that prevents your form getting unwanted submissions through the use of an image puzzle
 
+### [Try it out on CodePen](https://codepen.io/markmead/full/abYpZbj)
+
 ## Example 👀
 
 ```html
 <form x-data>
   <input type="text" palceholder="name" />
 
-  <div
-    x-form-validator
-    x-form-validator-img="..."
-  ></div>
+  <div x-form-validator x-form-validator-img="..."></div>
 
   <button type="submit"> Submit </button>
 </form>
@@ -32,7 +31,6 @@ The HTML that is generated hsa the following classes:
 ### Modifiers
 
 You can pass a rotation degrees with `x-form-validator.30` where `30` is the degrees you want.
-
 
 ## Install 🌟
 
@@ -60,14 +58,14 @@ yarn add -D alpinejs-form-validator
 Then you can register the plugin.
 
 ```js
-import Alpine from "alpinejs";
-import validator from "alpinejs-form-validator";
+import Alpine from 'alpinejs'
+import validator from 'alpinejs-form-validator'
 
-Alpine.plugin(validator);
+Alpine.plugin(validator)
 
-window.Alpine = Alpine;
+window.Alpine = Alpine
 
-Alpine.start();
+Alpine.start()
 ```
 
 ### Stats 📊
