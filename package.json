@@ -1,6 +1,6 @@
 {
   "name": "alpinejs-form-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "✅ Alpine JS plugin that prevents your form getting unwanted submissions through the use of an image puzzle",
   "keywords": [
     "Alpine",

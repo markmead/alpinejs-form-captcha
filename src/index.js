@@ -45,7 +45,10 @@ export default function (Alpine) {
 
     el.innerHTML = `
       <style>
-        ._fvImg { transform: rotate(var(--fv-rotate)) }
+        ._fvImg {
+          pointer-events: none;
+          transform: rotate(var(--fv-rotate));
+        }
       </style>
 
       <div x-data="{ _fvPos: ${startingPosition} }" class="_fvWrapper">
