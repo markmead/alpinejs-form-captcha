@@ -1,43 +1,38 @@
-# Alpine JS Persist Extended
+# Alpine JS Form Validator
 
-Alpine JS magic method `$storage` extends the official `$persist` plugin to help you work with local storage 📦
+✅ Alpine JS plugin that prevents your form getting unwanted submissions through the use of an image puzzle
 
 ## Example 👀
 
 ```html
-<div
-  x-data="{ name: $persist('') }"
-  x-on:storage-delete.window="name = $storage('name')"
->
-  <h2 x-text="name"></h2>
+<form x-data>
+  <input type="text" palceholder="name" />
 
-  <input type="text" x-model="name" />
+  <div
+    x-form-validator
+    x-form-validator-img="..."
+  ></div>
 
-  <button x-on:click="alert($storage('name'))">Alert Name</button>
-
-  <button x-on:click="$storage('name', 'delete')">Delete Name</button>
-</div>
+  <button type="submit"> Submit </button>
+</form>
 ```
 
-### Get
+### Styling
 
-```js
-$storage("name");
-```
+In the `x-form-validator-img` is where you can pass the URL for the image you want displayed.
 
-Gets the value from local storage of the provided key. It's not required, but you can pass `'get'` as a second parameter.
+The HTML that is generated hsa the following classes:
 
-### Delete
+- `_fvWrapper`
+- `_fvImg`
+- `_fvActions`
+- `_fvPrev`
+- `_fvNext`
 
-```js
-$storage("name", "delete");
-```
+### Modifiers
 
-Delete the data from local storage. This also emits an event that you can listen for in Alpine JS.
+You can pass a rotation degrees with `x-form-validator.30` where `30` is the degrees you want.
 
-```html
-<div x-on:storage-delete.window="name = $storage('name')"></div>
-```
 
 ## Install 🌟
 
@@ -48,12 +43,7 @@ It's very easy to install Alpine JS plugins! 🙌
 ```html
 <script
   defer
-  src="https://unpkg.com/alpinejs-persist-extended@latest/dist/storage.min.js"
-></script>
-
-<script
-  defer
-  src="https://unpkg.com/@alpinejs/persist@3.x.x/dist/cdn.min.js"
+  src="https://unpkg.com/alpinejs-form-validator@latest/dist/validator.min.js"
 ></script>
 
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -62,18 +52,18 @@ It's very easy to install Alpine JS plugins! 🙌
 ### NPM/Yarn
 
 ```shell
-npm i -D alpinejs-persist-extended
+npm i -D alpinejs-form-validator
 
-yarn add -D alpinejs-persist-extended
+yarn add -D alpinejs-form-validator
 ```
 
 Then you can register the plugin.
 
 ```js
 import Alpine from "alpinejs";
-import storage from "alpinejs-persist-extended";
+import validator from "alpinejs-form-validator";
 
-Alpine.plugin(storage);
+Alpine.plugin(validator);
 
 window.Alpine = Alpine;
 
@@ -82,9 +72,7 @@ Alpine.start();
 
 ### Stats 📊
 
-Here's some stats about the Alpine JS Persist Extended package! As you can see, it's tiny 🤏
-
-![](https://img.shields.io/bundlephobia/min/alpinejs-persist-extended)
-![](https://img.shields.io/npm/v/alpinejs-persist-extended)
-![](https://img.shields.io/npm/dt/alpinejs-persist-extended)
-![](https://img.shields.io/github/license/markmead/alpinejs-persist-extended)
+![](https://img.shields.io/bundlephobia/min/alpinejs-form-validator)
+![](https://img.shields.io/npm/v/alpinejs-form-validator)
+![](https://img.shields.io/npm/dt/alpinejs-form-validator)
+![](https://img.shields.io/github/license/markmead/alpinejs-form-validator)
