@@ -1,19 +1,21 @@
 {
-  "name": "alpinejs-form-validator",
-  "version": "1.0.2",
+  "name": "alpinejs-form-captcha",
+  "version": "1.0.0",
   "description": "✅ Alpine JS plugin that prevents your form getting unwanted submissions through the use of an image puzzle",
   "keywords": [
     "Alpine",
     "Alpine JS",
     "Alpine JS Plugins",
     "Alpine JS Form Validator",
-    "Alpine JS Form Validation"
+    "Alpine JS Form Validation",
+    "Alpine JS Form Captcha",
+    "Captcha"
   ],
   "author": "Mark Mead",
   "license": "MIT",
-  "main": "dist/validator.cjs.js",
-  "module": "dist/validator.esm.js",
-  "unpkg": "dist/validator.min.js",
+  "main": "dist/captcha.cjs.js",
+  "module": "dist/captcha.esm.js",
+  "unpkg": "dist/captcha.min.js",
   "scripts": {
     "build": "node scripts/build.js"
   },

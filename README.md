@@ -1,4 +1,4 @@
-# Alpine JS Form Validator
+# Alpine JS Form Captcha
 
 ✅ Alpine JS plugin that prevents your form getting unwanted submissions through the use of an image puzzle
 
@@ -10,7 +10,7 @@
 <form x-data>
   <input type="text" palceholder="name" />
 
-  <div x-form-validator x-form-validator-img="..."></div>
+  <div x-form-captcha x-form-captcha-img="..."></div>
 
   <button type="submit"> Submit </button>
 </form>
@@ -18,7 +18,7 @@
 
 ### Styling
 
-In the `x-form-validator-img` is where you can pass the URL for the image you want displayed.
+In the `x-form-captcha-img` is where you can pass the URL for the image you want displayed.
 
 The HTML that is generated hsa the following classes:
 
@@ -30,7 +30,7 @@ The HTML that is generated hsa the following classes:
 
 ### Modifiers
 
-You can pass a rotation degrees with `x-form-validator.30` where `30` is the degrees you want.
+You can pass a rotation degrees with `x-form-captcha.30` where `30` is the degrees you want.
 
 ## Install 🌟
 
@@ -41,7 +41,7 @@ It's very easy to install Alpine JS plugins! 🙌
 ```html
 <script
   defer
-  src="https://unpkg.com/alpinejs-form-validator@latest/dist/validator.min.js"
+  src="https://unpkg.com/alpinejs-form-captcha@latest/dist/captcha.min.js"
 ></script>
 
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -50,18 +50,18 @@ It's very easy to install Alpine JS plugins! 🙌
 ### NPM/Yarn
 
 ```shell
-npm i -D alpinejs-form-validator
+npm i -D alpinejs-form-captcha
 
-yarn add -D alpinejs-form-validator
+yarn add -D alpinejs-form-captcha
 ```
 
 Then you can register the plugin.
 
 ```js
 import Alpine from 'alpinejs'
-import validator from 'alpinejs-form-validator'
+import captcha from 'alpinejs-form-captcha'
 
-Alpine.plugin(validator)
+Alpine.plugin(captcha)
 
 window.Alpine = Alpine
 
@@ -70,7 +70,7 @@ Alpine.start()
 
 ### Stats 📊
 
-![](https://img.shields.io/bundlephobia/min/alpinejs-form-validator)
-![](https://img.shields.io/npm/v/alpinejs-form-validator)
-![](https://img.shields.io/npm/dt/alpinejs-form-validator)
-![](https://img.shields.io/github/license/markmead/alpinejs-form-validator)
+![](https://img.shields.io/bundlephobia/min/alpinejs-form-captcha)
+![](https://img.shields.io/npm/v/alpinejs-form-captcha)
+![](https://img.shields.io/npm/dt/alpinejs-form-captcha)
+![](https://img.shields.io/github/license/markmead/alpinejs-form-captcha)

@@ -1,6 +1,6 @@
 export default function (Alpine) {
-  Alpine.directive('form-validator', (el, { modifiers }, {}) => {
-    const imgSrc = el.getAttribute('x-form-validator-img')
+  Alpine.directive('form-captcha', (el, { modifiers }, {}) => {
+    const imgSrc = el.getAttribute('x-form-captcha-img')
 
     const rotateAmount = modifiers[0] || 15
 
