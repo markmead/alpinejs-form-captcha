@@ -11,7 +11,11 @@ export default function (Alpine) {
 
     let startingPosition = getStartingPosition()
 
-    while (startingPosition % rotationSteps === 0) {
+    while (
+      startingPosition % rotationSteps === 0 ||
+      startingPosition === 1 ||
+      startingPosition === rotationSteps - 1
+    ) {
       startingPosition = getStartingPosition()
     }
 
