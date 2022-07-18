@@ -16,6 +16,10 @@
 </form>
 ```
 
+### Bot Prevention
+
+There is logic in place to stop one click answers, meaning there shouldn't be a time where the answer is one click away.
+
 ### Styling
 
 In the `x-form-captcha-img` is where you can pass the URL for the image you want displayed.
