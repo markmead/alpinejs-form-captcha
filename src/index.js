@@ -49,19 +49,19 @@ export default function (Alpine) {
 
     el.innerHTML = `
       <style>
-        ._fvImg {
+        .fvImg {
           pointer-events: none;
           transform: rotate(var(--fv-rotate));
         }
       </style>
 
-      <div x-data="{ _fvPos: ${startingPosition} }" class="_fvWrapper">
-        <img src="${imgSrc}" class="_fvImg" :style="{ '--fv-rotate': _fvPos * ${rotateAmount} + 'deg' }" />
+      <div x-data="{ fvPos: ${startingPosition} }" class="fvWrapper">
+        <img src="${imgSrc}" class="fvImg" :style="{ '--fv-rotate': fvPos * ${rotateAmount} + 'deg' }" />
 
-        <div class="_fvActions">
-          <button type="button" class="_fvPrev" x-on:click="_fvPos--; $dispatch('fv-reset-form-buttons', _fvPos)">Prev</button>
+        <div class="fvActions">
+          <button type="button" class="fvPrev" x-on:click="fvPos--; $dispatch('fv-reset-form-buttons', fvPos)">Prev</button>
 
-          <button type="button" class="_fvNext" x-on:click="_fvPos++; $dispatch('fv-reset-form-buttons', _fvPos)">Next</button>
+          <button type="button" class="fvNext" x-on:click="fvPos++; $dispatch('fv-reset-form-buttons', fvPos)">Next</button>
         </div>
       </div>
     `

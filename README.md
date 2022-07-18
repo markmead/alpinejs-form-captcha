@@ -22,11 +22,11 @@ In the `x-form-captcha-img` is where you can pass the URL for the image you want
 
 The HTML that is generated hsa the following classes:
 
-- `_fvWrapper`
-- `_fvImg`
-- `_fvActions`
-- `_fvPrev`
-- `_fvNext`
+- `fvWrapper`
+- `fvImg`
+- `fvActions`
+- `fvPrev`
+- `fvNext`
 
 ### Modifiers
 
