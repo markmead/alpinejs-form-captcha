@@ -1,16 +1,20 @@
 # Alpine JS Form Captcha
 
-✅ Alpine JS plugin that prevents your form getting unwanted submissions through the use of an image puzzle
+Prevent your forms getting unwanted submissions through the use of an image
+puzzle ✅
 
 ### [Try it out on CodePen](https://codepen.io/markmead/full/abYpZbj)
 
-## Example 👀
+## Example
 
 ```html
 <form x-data>
-  <input type="text" palceholder="name" />
+  <input type="text" placeholder="Name" />
 
-  <div x-form-captcha x-form-captcha-img="..."></div>
+  <div
+    x-form-captcha
+    x-form-captcha-img="https://images.unsplash.com/photo-1598894000396-bc30e0996899?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
+  ></div>
 
   <button type="submit"> Submit </button>
 </form>
@@ -18,11 +22,13 @@
 
 ### Bot Prevention
 
-There is logic in place to stop one click answers, meaning there shouldn't be a time where the answer is one click away.
+There is logic in place to stop one click answers, meaning there shouldn't be a
+time where the answer is one click away.
 
 ### Styling
 
-In the `x-form-captcha-img` is where you can pass the URL for the image you want displayed.
+In the `x-form-captcha-img` is where you can pass the URL for the image you want
+displayed.
 
 The HTML that is generated hsa the following classes:
 
@@ -34,9 +40,10 @@ The HTML that is generated hsa the following classes:
 
 ### Modifiers
 
-You can pass a rotation degrees with `x-form-captcha.30` where `30` is the degrees you want.
+You can pass a rotation degrees with `x-form-captcha.30` where `30` is the
+degrees you want.
 
-## Install 🌟
+## Install
 
 It's very easy to install Alpine JS plugins! 🙌
 
@@ -72,7 +79,7 @@ window.Alpine = Alpine
 Alpine.start()
 ```
 
-### Stats 📊
+### Stats
 
 ![](https://img.shields.io/bundlephobia/min/alpinejs-form-captcha)
 ![](https://img.shields.io/npm/v/alpinejs-form-captcha)
