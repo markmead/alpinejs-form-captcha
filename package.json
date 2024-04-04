@@ -1,6 +1,6 @@
 {
   "name": "alpinejs-form-captcha",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Prevent your forms getting unwanted submissions through the use of an image puzzle ✅",
   "keywords": [
     "Alpine",
@@ -20,6 +20,6 @@
     "build": "node scripts/build.js"
   },
   "devDependencies": {
-    "esbuild": "^0.16.2"
+    "esbuild": "^0.20.2"
   }
 }
