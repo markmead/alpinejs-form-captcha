@@ -1,6 +1,7 @@
 # Alpine JS Form Captcha Plugin
 
-> [!IMPORTANT] Plugin is no longer supported.
+> [!IMPORTANT] 
+> Plugin is no longer supported.
 
 ![](https://img.shields.io/bundlephobia/min/alpinejs-form-captcha)
 ![](https://img.shields.io/npm/v/alpinejs-form-captcha)
@@ -26,11 +27,6 @@ step that _should_ require human interaction.
 </form>
 ```
 
-### Bot Prevention
-
-There is logic in place to stop one click answers, meaning there shouldn't be a
-time where the answer is one click away.
-
 ### Styling
 
 In the `x-form-captcha-img` is where you can pass the URL for the image you want
@@ -51,7 +47,7 @@ degrees you want.
 
 ## Install
 
-### CDN
+### With a CDN
 
 ```html
 <script
@@ -62,15 +58,13 @@ degrees you want.
 <script defer src="https://unpkg.com/alpinejs@latest/dist/cdn.min.js"></script>
 ```
 
-### NPM/Yarn
+### With a Package Manager
 
 ```shell
 npm i -D alpinejs-form-captcha
 
 yarn add -D alpinejs-form-captcha
 ```
-
-Then you can register the plugin.
 
 ```js
 import Alpine from 'alpinejs'
