@@ -2,9 +2,8 @@ export default function (Alpine) {
   Alpine.directive('form-captcha', (el, { modifiers }, {}) => {
     const imgSrc = el.getAttribute('x-form-captcha-img')
 
-    const rotateAmount = modifiers[0] || 15
-
-    const rotationSteps = 360 / rotateAmount
+    const rotationAmount = modifiers[0] || 15
+    const rotationSteps = 360 / rotationAmount
 
     const getStartingPosition = () =>
       Math.floor(Math.random() * rotationSteps) + 1
@@ -56,12 +55,12 @@ export default function (Alpine) {
       </style>
 
       <div x-data="{ fvPos: ${startingPosition} }" class="fvWrapper">
-        <img src="${imgSrc}" class="fvImg" :style="{ '--fv-rotate': fvPos * ${rotateAmount} + 'deg' }" />
+        <img src="${imgSrc}" class="fvImg" :style="{ '--fv-rotate': fvPos * ${rotationAmount} + 'deg' }" />
 
         <div class="fvActions">
-          <button type="button" class="fvPrev" x-on:click="fvPos--; $dispatch('fv-reset-form-buttons', fvPos)">Prev</button>
+          <button type="button" class="fvPrev" @click="fvPos--; $dispatch('fv-reset-form-buttons', fvPos)">Prev</button>
 
-          <button type="button" class="fvNext" x-on:click="fvPos++; $dispatch('fv-reset-form-buttons', fvPos)">Next</button>
+          <button type="button" class="fvNext" @click="fvPos++; $dispatch('fv-reset-form-buttons', fvPos)">Next</button>
         </div>
       </div>
     `
