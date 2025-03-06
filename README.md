@@ -1,9 +1,15 @@
-# Alpine JS Form Captcha
+# Alpine JS Form Captcha Plugin
 
-Prevent your forms getting unwanted submissions through the use of an image
-puzzle ✅
+> [!IMPORTANT] Plugin is no longer supported.
 
-### [Try it out on CodePen](https://codepen.io/markmead/full/abYpZbj)
+![](https://img.shields.io/bundlephobia/min/alpinejs-form-captcha)
+![](https://img.shields.io/npm/v/alpinejs-form-captcha)
+![](https://img.shields.io/npm/dt/alpinejs-form-captcha)
+![](https://img.shields.io/github/license/markmead/alpinejs-form-captcha)
+
+This plugin adds a simple image-based captcha system to forms using Alpine.js.
+It helps protect your forms from automated submissions by adding a verification
+step that _should_ require human interaction.
 
 ## Example
 
@@ -45,8 +51,6 @@ degrees you want.
 
 ## Install
 
-It's very easy to install Alpine JS plugins! 🙌
-
 ### CDN
 
 ```html
@@ -55,7 +59,7 @@ It's very easy to install Alpine JS plugins! 🙌
   src="https://unpkg.com/alpinejs-form-captcha@latest/dist/captcha.min.js"
 ></script>
 
-<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://unpkg.com/alpinejs@latest/dist/cdn.min.js"></script>
 ```
 
 ### NPM/Yarn
@@ -78,10 +82,3 @@ window.Alpine = Alpine
 
 Alpine.start()
 ```
-
-### Stats
-
-![](https://img.shields.io/bundlephobia/min/alpinejs-form-captcha)
-![](https://img.shields.io/npm/v/alpinejs-form-captcha)
-![](https://img.shields.io/npm/dt/alpinejs-form-captcha)
-![](https://img.shields.io/github/license/markmead/alpinejs-form-captcha)
